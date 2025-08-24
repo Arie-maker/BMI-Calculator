@@ -1,6 +1,6 @@
 import streamlit as st
 st.title("BMI Calculator")
-st.image("bmi.PNG")
+st.image("bmi.png")
 weight = st.number_input("Enter your weight in kgs :")
 height = st.number_input("Enter your height in meter :")
 bmi = weight / (height**2)
@@ -15,4 +15,5 @@ elif bmi>=25 and bmi<=29.9 :
 elif bmi>=30  and bmi <= 39.9 :
     st.success("Category : Class 2 Obesity")
 else :
+
     st.success("Category : Class 3 Obesity")
