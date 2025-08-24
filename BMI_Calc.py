@@ -7,7 +7,7 @@ if weight > 0 and height > 0 :
     height /= 100
     bmi = weight / (height**2)
     if st.button("Calculate") :
-        st.write(f"Your BMI : {bmi : .2f}")
+        st.subheader(f"Your BMI : {bmi : .2f}")
         if bmi < 18.5 :
             st.success("Category : Underweight")
         elif bmi >= 18.5 and bmi <= 24.9 :
